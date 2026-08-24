@@ -50,6 +50,18 @@ Items 2–4 are *documentary proof of corporate existence*. They cannot be draft
 compensated for by a strong technical proposal. Without them the submission is discarded before
 scoring begins.
 
+### Independently confirmed by the public advertisement
+
+The Devjobsindo posting (advertised 18–26 August 2026) states it outright under *How to Apply*:
+
+> "Please ensure that your organization **must legally registered in Indonesia, as this is a
+> requirement for participation.** Kindly verify that your organization meets this criterion."
+
+"Requirement for participation" settles it. Two independent statements — the incomplete-documents
+clause on page 3 of the RFP, and this sentence in the public advertisement — reach the same
+conclusion. The posting even asks bidders to *self-verify* the criterion before applying, which is
+the language of screening people out up front rather than scoring them down later.
+
 **So the decision tree has one root node:**
 
 > Does the bidding entity hold akta + SK Kemenkumham + NPWP + domicile evidence, in hand, by 26 Aug?
@@ -64,6 +76,12 @@ alongside legal registration, portfolio, and a dedicated PM. The RFP does **not*
 pass/fail threshold — but the block is titled "Essential" and uses "must," and the Contract Award
 clause says awards go to a tenderer that "meets the eligibility requirements." The honest reading
 is: **ambiguous, panel-dependent, and likely to cost most or all of the 20%.**
+
+**Sharpened by the advertisement.** The posting names exactly *one* participation requirement —
+legal registration in Indonesia. The eight-year criterion is not restated as a participation
+requirement anywhere. That strengthens the reading that it is scored inside the 20% block rather
+than being a gate of its own, which makes the arithmetic below more plausible — **provided the
+registration gate is cleared first.**
 
 Arithmetic if it is scored (not threshold): 50% + 30% = 80 points remain reachable. Score 90% of
 those and you land at 72/100 with a zero on organisational experience. In a thin field (see §3)

@@ -2,7 +2,8 @@
 
 **Nomor RFP:** RFP/Website Development/018-08-2026
 **Penerbit:** DT Global, untuk Australia Indonesia Partnership for Justice Phase 3 (AIPJ3), didanai DFAT
-**Sumber:** dokumen RFP asli, 15 halaman, terbit 12 Agustus 2026
+**Sumber:** dokumen RFP asli, 15 halaman, terbit 12 Agustus 2026; diperkuat pengumuman
+publik Devjobsindo (tayang 18–26 Agustus 2026)
 **Tanggal analisis:** 24 Agustus 2026
 
 > Dokumen ini memuat **temuan atas dokumen RFP**. Rekomendasi dan rencana tindakan
@@ -67,6 +68,23 @@ satu tidak ada, penawaran **gugur sebelum dinilai**.
 - **Ya** → lanjut. Persyaratan 8 tahun turun menjadi persoalan penilaian, dan persoalan
   penilaian masih bisa dimenangkan.
 
+### 2.1 Dikonfirmasi oleh pengumuman publik
+
+Pengumuman tender di Devjobsindo menyatakan hal ini secara eksplisit pada bagian
+*How to Apply*:
+
+> "Please ensure that your organization **must legally registered in Indonesia, as this is a
+> requirement for participation.** Kindly verify that your organization meets this criterion."
+
+Frasa **"requirement for participation"** menghapus keraguan. Status badan hukum terdaftar
+di Indonesia adalah **syarat keikutsertaan**, bukan sekadar komponen penilaian. Dua
+pernyataan yang saling bebas menuju kesimpulan sama: klausul dokumen tidak lengkap pada
+halaman 3 RFP, dan kalimat ini pada pengumuman publik.
+
+Pengumuman itu bahkan meminta calon peserta **memverifikasi sendiri** kriteria tersebut
+sebelum mengajukan — nada yang lazim dipakai ketika panitia hendak menyaring peserta di
+muka, bukan menilainya belakangan.
+
 ---
 
 ## 3. Seberapa berat sebenarnya syarat 8 tahun
@@ -80,6 +98,13 @@ memakai kata "Essential", rumusan butirnya memakai kata "must", dan klausul Cont
 menyebut pemenang harus "meets the eligibility requirements". Pembacaan yang jujur:
 **ambigu, bergantung penafsiran panel, dan besar kemungkinan menggerus hampir seluruh 20%
 tersebut.**
+
+**Penajaman setelah memeriksa pengumuman publik.** Pengumuman Devjobsindo hanya menyebut
+**satu** syarat keikutsertaan, yaitu badan hukum terdaftar di Indonesia (lihat 2.1).
+Persyaratan pengalaman 8 tahun **tidak** diulang sebagai syarat keikutsertaan di mana pun.
+Ini memperkuat pembacaan bahwa butir tersebut merupakan komponen penilaian di dalam blok
+20%, bukan syarat gugur tersendiri — sehingga skenario 72/100 di bawah menjadi lebih masuk
+akal, **sepanjang status badan hukum terpenuhi lebih dulu.**
 
 **Hitungan bila diperlakukan sebagai penilaian, bukan syarat gugur:**
 
@@ -298,7 +323,8 @@ kegagalan yang lazim dan sepenuhnya dapat dihindari.
 
 1. Batas pemasukan **masih terbuka**; sisa waktu ± 52 jam per 24 Agustus 2026.
 2. Penghalang sesungguhnya adalah **kelengkapan dokumen administratif Lampiran 1**, bukan
-   syarat pengalaman 8 tahun. Yang pertama menggugurkan; yang kedua mengurangi nilai.
+   syarat pengalaman 8 tahun. Yang pertama menggugurkan — dan kini **dikonfirmasi dua kali**,
+   oleh RFP maupun pengumuman publik; yang kedua hanya mengurangi nilai.
 3. **Blok metodologi 50%** adalah titik kemenangan, dan RFP secara eksplisit membuka ruang
    untuk mengusulkan teknologi di luar daftar.
 4. **Pagu 150 juta menyaring pasar** dan menipiskan persaingan — secara struktural
