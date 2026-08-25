@@ -30,7 +30,16 @@ berisiko terbuang.
 
 ## 2. Tiga opsi strategis
 
+> **[PERLU DIDISKUSIKAN — KETIGANYA]**
+> **Diputuskan oleh:** internal, bersama calon mitra bila menempuh Opsi B
+> **Kapan:** **malam ini**, sebelum satu halaman proposal pun ditulis
+> **Kenapa mendesak:** pilihan ini bergantung pada status badan hukum. Selama itu belum pasti,
+> menulis Bagian A, B, atau C berisiko terbuang seluruhnya.
+
 ### Opsi A — Mengajukan penawaran secara mandiri
+
+> **[PERLU DIDISKUSIKAN]** Layak dibahas hanya bila dokumen badan hukum sudah di tangan. Bila belum, opsi ini gugur dengan sendirinya dan tidak perlu didiskusikan lebih jauh.
+
 
 **Layak hanya jika** dokumen administratif sudah lengkap sebelum batas waktu. Bila proses
 pendirian badan usaha masih berjalan, **opsi ini tidak tersedia** — bukan sulit, melainkan
@@ -46,6 +55,9 @@ benar secara faktual. Jangan pernah menyajikan pengalaman perorangan sebagai rek
 badan usaha.
 
 ### Opsi B — Bermitra dengan badan usaha yang telah terdaftar — **REKOMENDASI**
+
+> **[PERLU DIDISKUSIKAN]** Perlu keputusan cepat karena melibatkan pihak lain: kesediaan mitra, dokumen mereka, dan tanda tangan direkturnya. Hubungan yang belum ada tidak akan terbentuk dalam 48 jam.
+
 
 Menyelesaikan gerbang administratif **dan** syarat pengalaman 8 tahun sekaligus dalam satu
 langkah. Akta, NPWP, domisili, dan lembar pengalaman mitra menopang Bagian A serta blok
@@ -65,6 +77,9 @@ mereka beserta pemberi referensi yang dapat dihubungi; kesepakatan kerja sama te
 tanda tangan direktur mitra pada Tenderer's Declaration.
 
 ### Opsi C — Tidak mengajukan penawaran, dan mengubah sisa waktu menjadi aset
+
+> **[PERLU DIDISKUSIKAN]** Perlu dibahas sebagai keputusan sadar, bukan sebagai kegagalan yang terjadi begitu saja karena waktu habis.
+
 
 **Ini bukan kegagalan.** RFP sendiri menunjukkan evaluasi berlangsung 27 Agustus – 14
 September, dan DT Global menerbitkan RFP sejenis secara berkala.

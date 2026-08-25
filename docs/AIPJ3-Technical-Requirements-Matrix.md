@@ -189,6 +189,12 @@ submission and it is a recruitment task, not a writing task.
 
 ## 9. Deviation register
 
+> **All five deviations and all six assumptions carry a [NEEDS DISCUSSION] label.** They are
+> stated in the proposal and settled with AIPJ3 at the inception meeting. Deviation D3 is the
+> only one that can fail on technical grounds rather than by decision — it is a Phase 1 gate.
+> The consolidated agenda, including the internal decisions that come first, is maintained in
+> `id/Persyaratan-Teknis-AIPJ3.md` §13.
+
 The RFP invites this directly: *"The following list is for reference only. Provider could identify
 other than the list with description of its advantages and disadvantages."* Each deviation below
 states real disadvantages, because a register listing only benefits is not a register.

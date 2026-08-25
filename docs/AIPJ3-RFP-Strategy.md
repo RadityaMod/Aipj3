@@ -196,6 +196,10 @@ structure:
 
 ## 4. Three strategic options
 
+> **[NEEDS DISCUSSION — ALL THREE]** Decided internally, tonight, before any proposal page is
+> written. The choice hinges on the registration status; until that is settled, drafting Parts
+> A, B or C risks being discarded entirely.
+
 ### Option A — Bid as ICW, standalone
 **Viable only if** akta + SK Kemenkumham + NPWP + domicile are in hand before 26 Aug 23:59.
 If registration is still "in process," this option does not exist. Even if documents exist, expect

@@ -37,6 +37,10 @@ Bagian 9 — **lima personel kunci belum ada CV-nya sama sekali**, padahal bobot
 | **Alternatif** | Kita usulkan cara lain — alasannya di Bagian 10 |
 | **Asumsi** | Bergantung pada hal yang perlu dikonfirmasi — daftarnya di Bagian 11 |
 
+Setiap butir bertanda **Alternatif** dan **Asumsi** juga membawa label
+**[PERLU DIDISKUSIKAN]**, lengkap dengan dengan siapa dibahas, kapan, dan apa rencana
+cadangannya bila tidak disetujui. Rekapnya ada di Bagian 13.
+
 ---
 
 ## 1. Tujuan situs (8 butir)
@@ -217,6 +221,13 @@ kekurangannya yang sebenarnya. Daftar yang hanya memuat kelebihan tidak akan dip
 
 ### Alternatif 1 — Situs statis, bukan aplikasi server
 
+> **[PERLU DIDISKUSIKAN]**
+> **Dibahas dengan:** AIPJ3 (Strategic Communications Manager)
+> **Kapan:** Rapat awal, Tahap 1
+> **Kenapa perlu dibahas:** Konsekuensinya konten terbit dalam 3–6 menit, bukan seketika. Ekspektasi ini harus disepakati di depan, bukan ditemukan saat ada koreksi mendesak.
+> **Bila tidak disetujui:** Beralih ke mode server dengan ISR. Biaya hosting dan beban operasional naik, dan SLA 99,9% jadi komitmen aplikasi — bukan lagi CDN.
+
+
 **Kelebihan.** Nyaris tidak ada permukaan serangan. SLA 99,9% jadi komitmen CDN, bukan
 aplikasi. **CMS mati tidak membuat situs ikut mati** — versi terakhir tetap tayang. Kecepatan
 terbaik. Biaya hosting cukup murah untuk masuk pagu bersama 12 bulan pemeliharaan.
@@ -226,6 +237,13 @@ personalisasi per pengunjung atau fitur waktu nyata — keduanya memang tidak ad
 Waktu bangun situs bertambah seiring jumlah konten.
 
 ### Alternatif 2 — Payload v3 dipasang sendiri, bukan Contentful atau Sanity
+
+> **[PERLU DIDISKUSIKAN]**
+> **Dibahas dengan:** AIPJ3 — RFP mensyaratkan *client-approved CMS*
+> **Kapan:** Rapat awal, Tahap 1
+> **Kenapa perlu dibahas:** Ini alternatif yang paling mungkin dipertanyakan panel, karena RFP menyebut dua nama secara eksplisit.
+> **Bila tidak disetujui:** Pakai Sanity. Biaya lisensi tahun kedua dan seterusnya menjadi tanggungan AIPJ3, dan data draf tersimpan di luar Indonesia.
+
 
 **Kelebihan.** Tidak ada biaya lisensi selamanya — penting, karena setelah kontrak berakhir
 biaya itu jadi tanggungan AIPJ3, bukan kita. Data sepenuhnya di Indonesia. RBAC dan alur
@@ -241,6 +259,13 @@ terbatas karena server admin tidak berada di jalur kritis situs publik.
 
 ### Alternatif 3 — Hosting di Indonesia, bukan platform yang disebut RFP
 
+> **[PERLU DIDISKUSIKAN]**
+> **Dibahas dengan:** AIPJ3 **dan** calon penyedia hosting
+> **Kapan:** **Sebelum pekerjaan infrastruktur dimulai** — ini gerbang Tahap 1
+> **Kenapa perlu dibahas:** Satu-satunya alternatif yang bisa gugur karena alasan teknis, bukan karena keputusan. Penyedia harus terbukti mendukung header HTTP kustom dan API pembersihan cache.
+> **Bila tidak disetujui:** Pasang CDN di depan server lokal. Kedaulatan data tetap terjaga, kerumitannya bertambah.
+
+
 **Kelebihan.** Memenuhi klausul "penyedia lokal" secara harfiah, bukan lewat argumen. Kedaulatan
 data memang relevan untuk program kemitraan Pemerintah Indonesia–DFAT. Latensi lebih rendah bagi
 audiens Indonesia.
@@ -252,6 +277,13 @@ adalah memasang CDN di depan server lokal.
 
 ### Alternatif 4 — Pencarian statis, bukan layanan pencarian berbayar
 
+> **[PERLU DIDISKUSIKAN]**
+> **Dibahas dengan:** AIPJ3
+> **Kapan:** Rapat awal, Tahap 1
+> **Kenapa perlu dibahas:** Ringan — cukup konfirmasi bahwa analitik kata kunci pencarian tidak termasuk kebutuhan wajib.
+> **Bila tidak disetujui:** Pasang layanan pencarian berlangganan. Menambah biaya berulang yang berlanjut setelah kontrak berakhir.
+
+
 **Kelebihan.** Tanpa server, tanpa langganan, mendukung dua bahasa, indeksnya dibangun bersama
 situs.
 
@@ -259,6 +291,13 @@ situs.
 tidak masalah pada skala ini. Analitik kata kunci perlu dipasang terpisah.
 
 ### Alternatif 5 — Tanpa API publik
+
+> **[PERLU DIDISKUSIKAN]**
+> **Dibahas dengan:** AIPJ3
+> **Kapan:** Rapat awal, Tahap 1
+> **Kenapa perlu dibahas:** Perlu dipastikan tidak ada pihak ketiga yang berencana mengambil data dari situs ini selama masa kontrak.
+> **Bila tidak disetujui:** Bangun API publik beserta autentikasi, pembatasan laju, dan pemeliharaannya. Menambah permukaan serangan dan pekerjaan.
+
 
 **Kelebihan.** Endpoint yang tidak dibuat tidak bisa diserang atau lupa ditambal. Tidak ada
 kebutuhan dalam lingkup yang memerlukannya.
@@ -271,6 +310,7 @@ baru. Dicatat sekarang agar menjadi pilihan sadar, bukan keterbatasan yang ditem
 ## 11. Enam asumsi yang harus dinyatakan di proposal
 
 Jendela pertanyaan sudah tutup 20 Agustus, jadi hal-hal ini tidak bisa lagi ditanyakan resmi.
+**Keenamnya berlabel [PERLU DIDISKUSIKAN]** dan harus masuk agenda rapat awal bersama AIPJ3.
 
 | # | Asumsi |
 |---|---|
@@ -309,3 +349,34 @@ disalahpahami ke dua arah.
 
 **Catatan 5 — Blok personel belum terisi.** Bobot 30%, dan tidak bisa diselesaikan dengan
 menulis. Lihat Bagian 9.
+
+---
+
+## 13. Rekap: yang perlu didiskusikan
+
+Sebelas butir, terbagi menurut siapa lawan bicaranya.
+
+### Dibahas internal — sebelum proposal dikirim
+
+| Butir | Batas waktu |
+|---|---|
+| Status akta, SK Kemenkumham, NPWP, surat domisili | **Malam ini** — menentukan ikut atau tidak |
+| Lima personel kunci dan sepuluh pemberi referensi (Bagian 9) | Sebelum 26 Agustus |
+| Pilihan Opsi A / B / C — lihat `Strategi-Penawaran-AIPJ3.md` | **Malam ini** |
+
+### Dibahas dengan AIPJ3 — dinyatakan di proposal, disepakati di rapat awal
+
+| Butir | Sifat |
+|---|---|
+| Alternatif 1 — situs statis | Ekspektasi waktu terbit konten |
+| Alternatif 2 — Payload v3 | Butuh persetujuan formal *client-approved CMS* |
+| Alternatif 3 — hosting Indonesia | **Bisa gugur karena alasan teknis** — gerbang Tahap 1 |
+| Alternatif 4 — pencarian statis | Konfirmasi ringan |
+| Alternatif 5 — tanpa API publik | Konfirmasi ringan |
+| Asumsi A1–A6 | Enam asumsi yang tidak bisa lagi ditanyakan resmi |
+| Catatan 1 — GTM versus Lighthouse ≥ 90 | Kontradiksi di dalam RFP, perlu kesepakatan cara ukur |
+| Catatan 2 — definisi uptime 99,9% | Definisi tak tertulis adalah sumber sengketa SLA |
+| Catatan 4 — uji penetrasi hanya rekomendasi | Mudah disalahpahami ke dua arah |
+
+**Yang paling mendesak:** tiga butir internal. Semua butir AIPJ3 baru relevan setelah penawaran
+kita benar-benar dievaluasi.
