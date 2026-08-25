@@ -7,15 +7,16 @@
 ## Isi
 
 1. Ringkasan — kenapa pendekatan ini
-2. Strategi: di mana penawaran ini dimenangkan
-3. Metodologi kerja
-4. Rekomendasi struktur halaman
-5. Desain sistem
-6. Requirement fungsional
-7. Requirement non-fungsional
-8. Rencana pengujian dan penerimaan
-9. Rencana pemeliharaan 12 bulan
-10. Risiko dan hal yang perlu didiskusikan
+2. **Strategi requirement gathering**
+3. Strategi: di mana penawaran ini dimenangkan
+4. Metodologi kerja
+5. Rekomendasi struktur halaman
+6. Desain sistem
+7. Requirement fungsional
+8. Requirement non-fungsional
+9. Rencana pengujian dan penerimaan
+10. Rencana pemeliharaan 12 bulan
+11. Risiko dan hal yang perlu didiskusikan
 
 ---
 
@@ -43,7 +44,131 @@ diselesaikan dengan baik pada anggaran yang tersedia.
 
 ---
 
-## 2. Strategi: di mana penawaran ini dimenangkan
+## 2. Strategi requirement gathering
+
+### Kenapa bagian ini ada di depan
+
+Requirement fungsional dan non-fungsional di Bagian 7 dan 8 adalah **hipotesis kami, bukan
+temuan.** Secara kontrak, kebutuhan baru ditetapkan bersama pemangku kepentingan pada Tahap 1 dan
+ditandatangani sebagai Keluaran 1.
+
+Bedanya penting karena pagu sudah dikunci. Penggalian kebutuhan yang tidak terkendali pada
+anggaran tetap hanya berujung satu hal: margin habis sebelum pembangunan selesai. Karena itu
+penggalian kebutuhan di sini diperlakukan sebagai **proses berbatas waktu dengan tata cara yang
+jelas**, bukan rangkaian rapat terbuka.
+
+### Lima prinsip
+
+**1. Datang dengan hipotesis, bukan halaman kosong.** Peta situs, FR, dan NFR di dokumen ini
+dibawa ke lokakarya sebagai bahan untuk disetujui atau ditolak. Menanggapi selalu lebih cepat
+daripada mengarang dari nol — dan hasilnya lebih tajam.
+
+**2. Pisahkan yang mengikat dari yang diusulkan.** Kebutuhan yang berasal dari RFP bersifat
+kontraktual dan tidak dapat dinegosiasikan turun. Kebutuhan yang muncul dari lokakarya adalah
+tambahan, dan harus dikelola terhadap pagu. Keduanya tidak boleh tercampur dalam satu daftar tanpa
+penanda.
+
+**3. Setiap kebutuhan punya pemilik dan kriteria diterima.** Kalimat "situsnya harus mudah
+dipakai" bukan kebutuhan. "Penyunting dapat menerbitkan berita tanpa bantuan developer" adalah
+kebutuhan, karena bisa diuji.
+
+**4. Berbatas waktu.** Tahap 1 hanya 30 hari kalender, dan itu sudah termasuk penyusunan wireframe
+serta arah visual. Penggalian kebutuhan mendapat jatah dua minggu pertama.
+
+**5. Bekukan di akhir Tahap 1.** Setelah Keluaran 1 ditandatangani, perubahan mengikuti prosedur
+di bawah. Tanpa titik beku, tidak ada tanggal peluncuran yang bisa dipertahankan.
+
+### Siapa yang harus ditemui
+
+| Pemangku kepentingan | Yang digali dari mereka | Prioritas |
+|---|---|---|
+| **Strategic Communications Manager** | Definisi sukses, prioritas, wewenang persetujuan | Wajib — pemilik Keluaran 1 |
+| **Tim Komunikasi AIPJ3** | Alur kerja penerbitan saat ini, hambatan nyata, ritme mingguan | Wajib — pengguna harian CMS |
+| **Perwakilan DFAT** | Mekanisme persetujuan konten, kebutuhan akuntabilitas | Wajib — memengaruhi desain peran |
+| **Perwakilan lembaga hukum GOI** | Kebutuhan konten resmi, format dokumen | Penting |
+| **Organisasi disabilitas** | Kebutuhan aksesibilitas nyata; sekaligus calon peserta uji Tahap 2 | Penting — hubungi sejak minggu 1 |
+| **Tim IT DT Global / AIPJ3** | Domain, DNS, kendala infrastruktur, kebijakan keamanan | Wajib — bisa mengubah arsitektur |
+
+**Baris DFAT yang paling sering dilewatkan.** RFP menyebut *"following DFAT's approval mechanism"*
+tanpa menjelaskan mekanismenya. Padahal itu menentukan berapa lapis persetujuan yang harus
+dibangun ke dalam sistem peran. Ini harus digali eksplisit di minggu pertama, bukan diasumsikan.
+
+### Teknik yang dipakai
+
+| Teknik | Untuk menggali | Peserta | Durasi |
+|---|---|---|---|
+| Lokakarya penemuan | Tujuan, prioritas, definisi sukses | SCM + tim komunikasi | 3 jam |
+| Wawancara mendalam | Alur kerja dan hambatan sebenarnya | 3–5 orang | 45 menit/orang |
+| Audit konten | Materi yang sudah ada: volume, format, kondisi | Mandiri + tim komunikasi | 2 hari |
+| Analisis pembanding | Situs program donor sejenis | Mandiri | 1 hari |
+| Kartu sortir | Struktur navigasi yang masuk akal bagi pengguna | 5–8 peserta | 1 jam |
+| Sesi aksesibilitas | Kebutuhan nyata penyandang disabilitas | Organisasi mitra | 2 jam |
+| Peninjauan teknis | Domain, DNS, hosting, kebijakan keamanan | Tim IT | 1 jam |
+
+**Audit konten adalah yang paling sering diremehkan.** Situs terlambat tayang bukan karena kodenya
+belum jadi, melainkan karena kontennya belum siap. Melakukannya di minggu pertama memberi peringatan
+dini beberapa bulan sebelum tenggat.
+
+### Jadwal 30 hari Tahap 1
+
+| Minggu | Kegiatan | Hasil |
+|---|---|---|
+| **1** (15–21 Sep) | Rapat awal, lokakarya penemuan, audit konten, peninjauan teknis | Daftar kebutuhan awal, gerbang hosting diperiksa |
+| **2** (22–28 Sep) | Wawancara, kartu sortir, analisis pembanding, sesi aksesibilitas | Masukan pengguna, struktur navigasi teruji |
+| **3** (29 Sep–5 Okt) | Sintesis | Persona, peta perjalanan, peta situs, FR dan NFR final |
+| **4** (6–15 Okt) | Wireframe, arah visual, tinjauan klien, revisi | **Keluaran 1 ditandatangani** |
+
+**Gerbang hosting diperiksa di minggu 1**, bukan menjelang pembangunan. Bila penyedia lokal tidak
+mendukung header HTTP kustom atau API pembersihan cache, arsitekturnya yang berubah — dan kita perlu
+tahu itu saat masih ada waktu.
+
+### Cara mencatat: register kebutuhan
+
+Satu tabel tunggal, menjadi sumber kebenaran sepanjang proyek.
+
+| Kolom | Isi |
+|---|---|
+| ID | FR-01, NFR-01, dan seterusnya |
+| Deskripsi | Satu kalimat yang bisa diuji |
+| Sumber | RFP pasal sekian, atau nama orang yang memintanya |
+| Sifat | **Mengikat** (dari RFP) atau **Diusulkan** (dari lokakarya) |
+| Prioritas | Harus / Sebaiknya / Boleh / Tidak sekarang |
+| Kriteria diterima | Bagaimana membuktikannya terpenuhi |
+| Status | Diusulkan → Disepakati → Dibangun → Diterima |
+
+Prioritas memakai empat tingkat, dan **jatah "Harus" tidak boleh melebihi kapasitas anggaran.**
+Bila lokakarya menghasilkan lebih banyak "Harus" daripada yang muat, itu percakapan yang harus
+terjadi di bulan pertama — bukan di bulan keempat.
+
+Seluruh FR dan NFR di Bagian 7 dan 8 masuk register ini berstatus **Diusulkan**. Yang berasal
+langsung dari RFP langsung berstatus **Mengikat** dan tidak dinegosiasikan.
+
+### Prosedur perubahan setelah Tahap 1
+
+Disepakati tertulis sebagai bagian dari Keluaran 1.
+
+| Jenis perubahan | Penanganan |
+|---|---|
+| Tidak menambah usaha | Langsung dikerjakan, dicatat di register |
+| Menambah usaha, ada anggaran | **Ditukar** dengan butir lain berprioritas sama |
+| Menambah usaha, tidak ada ruang | Menjadi adendum terpisah, di luar kontrak ini |
+
+**Mekanisme tukar-lingkup inilah yang melindungi pagu tetap** tanpa membuat kita terkesan menolak
+masukan klien. Jawabannya bukan "tidak bisa", melainkan "bisa — butir mana yang kita geser?"
+
+### Risiko penggalian kebutuhan
+
+| Risiko | Penanganan |
+|---|---|
+| Pemangku kepentingan kunci tidak hadir | Jadwalkan sejak rapat awal; tetapkan pengganti yang berwenang |
+| Kebutuhan membengkak melewati kapasitas | Empat tingkat prioritas + prosedur tukar-lingkup |
+| Mekanisme persetujuan DFAT tidak jelas | Digali eksplisit di minggu 1 — memengaruhi desain peran |
+| Konten belum siap saat pembangunan selesai | Audit konten minggu 1 memberi peringatan dini |
+| Lokakarya menghasilkan struktur berbeda dari usulan | Sistem blok membuatnya jadi konfigurasi, bukan pekerjaan ulang |
+
+---
+
+## 3. Strategi: di mana penawaran ini dimenangkan
 
 | Kriteria penilaian | Bobot |
 |---|---:|
@@ -80,7 +205,7 @@ tanggal. Kita tidak mengoreksi klien — kita cukup menyerahkan jadwal yang masu
 
 ---
 
-## 3. Metodologi kerja
+## 4. Metodologi kerja
 
 Empat tahap kontrak sudah selaras dengan alur design thinking. Kita gunakan itu apa adanya.
 
@@ -132,11 +257,11 @@ terverifikasi.
 
 ### Tahap 4 — Pemeliharaan (29 Jan 2027 – 28 Jan 2028)
 
-Rinciannya di Bagian 9.
+Rinciannya di Bagian 10.
 
 ---
 
-## 4. Rekomendasi struktur halaman
+## 5. Rekomendasi struktur halaman
 
 > **[PERLU DIDISKUSIKAN]**
 > **Dibahas dengan:** AIPJ3, pada lokakarya Tahap 1
@@ -208,7 +333,7 @@ Tiga belas template, bukan puluhan halaman:
 
 ---
 
-## 5. Desain sistem
+## 6. Desain sistem
 
 ### Dua bagian dengan tuntutan ketersediaan berbeda
 
@@ -288,7 +413,7 @@ mekanis** — tidak bisa dilewati oleh siapa pun yang sedang terburu-buru.
 
 ---
 
-## 6. Requirement fungsional
+## 7. Requirement fungsional
 
 Apa yang harus **bisa dilakukan** sistem. Semuanya dapat diuji.
 
@@ -324,7 +449,7 @@ Apa yang harus **bisa dilakukan** sistem. Semuanya dapat diuji.
 
 ---
 
-## 7. Requirement non-fungsional
+## 8. Requirement non-fungsional
 
 **Seberapa baik** sistem harus bekerja. Ini yang biasanya menjadi sumber sengketa bila tidak
 dituliskan angkanya.
@@ -356,7 +481,7 @@ siapa pun.** Ini argumen *value for money* yang layak dinyatakan terbuka.
 
 ---
 
-## 8. Rencana pengujian dan penerimaan
+## 9. Rencana pengujian dan penerimaan
 
 | Lapisan | Alat | Cakupan |
 |---|---|---|
@@ -385,7 +510,7 @@ Butir 5 dan 6 membuktikan kewajiban kontrak. Butir 1–4 membuktikan kodenya.
 
 ---
 
-## 9. Rencana pemeliharaan 12 bulan
+## 10. Rencana pemeliharaan 12 bulan
 
 | Kegiatan | Frekuensi |
 |---|---|
@@ -414,7 +539,7 @@ repositori. Pelatihan dua jam direkam, disertai panduan admin dwibahasa.
 
 ---
 
-## 10. Risiko dan hal yang perlu didiskusikan
+## 11. Risiko dan hal yang perlu didiskusikan
 
 | Risiko | Penanganan |
 |---|---|
